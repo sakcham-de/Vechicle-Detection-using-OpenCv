@@ -1,6 +1,6 @@
 # Vehicle Detection
 
-This Python script is used for downloading an image from a URL and processing it for vehicle detection.
+This is a simple Python script is used for vehicle detection using OpenCv and numpy
 
 The script uses the following libraries:
 - PIL: For opening and manipulating the image.
@@ -15,6 +15,10 @@ The script uses the following libraries:
 3. The image is then resized to a dimension of 450x250 pixels using the `resize()` function.
 4. The resized image is converted to a numpy array using the `numpy.array()` function.
 5. The numpy array is displayed as an image using the `cv2.imshow()` function.
-6. The script waits for any key to be pressed before closing the displayed image window using `cv2.waitKey(0)` and `cv2.destroyAllWindows()`.
+6. The array is then blurred using the Gaussian blur function.
+7. After blurring, dilation was applied to the blurred image.
+8. After that morphological closing was applied.
+9. A classifier named Haar cascade classifier was used which is a opensource classifiers for cars. The classifer was taken from https://gist.github.com/199995/37e1e0af2bf8965e8058a9dfa3285bc6.
+10. Rectangular boxes were created around each detected vehicle and shown as output. 
 
-The script is currently set up to convert the image to grayscale, but this part of the code is not yet implemented.
+
