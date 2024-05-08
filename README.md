@@ -6,7 +6,7 @@ The script uses the following libraries:
 - PIL: For opening and manipulating the image.
 - cv2: For displaying the image and converting it to grayscale.
 - numpy: For converting the image to a numpy array.
-- requests: For downloading the image from the URL.
+- requests: For downloading the image from the URL. The image was used from https://a57.foxnews.com/media.foxbusiness.com/BrightCove/854081161001/201805/2879/931/524/854081161001_5782482890001_5782477388001-vs.jpg
 
 ## How it works
 
